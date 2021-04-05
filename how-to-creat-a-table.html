@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table HTML-CSS by Leticia Bibiano</title>
+
+    <style>
+
+        .title {
+            background: #ff95ff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .title-internal {
+            display: inline-block;
+        }
+
+        .title-external {
+            text-align: center;
+            width: 100%;
+            margin: 20px;
+        }
+
+        table td, table th {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 150%;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align: left;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px 0 ;
+        }
+
+        tfoot td {
+            background: #ddd;
+            font-style: italic;
+        }
+
+        table th{
+            background: #ccc;
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="title-external"> 
+    <span class="title-internal">    
+       <b class="title"> My table </b>
+    </span>
+</div>
+
+<div class="responsive-table">    
+    <table>
+
+        <caption> This table was made with HTLM and CSS, by Letícia Bibiano </caption>
+ 
+        <thead>
+            <tr>
+                <th> Title 1 </th>
+                <th> Title 2 </th>
+                <th> Title 3 </th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr> 
+                <td rowspan="2"> Content 1 </td>
+                <td> Content 2 </td>
+                <td> Content 3 </td>
+            </tr>
+
+            <tr> 
+                <td> Content 4 </td>                
+                <td> Content 5 </td>
+            </tr>
+
+            <tr> 
+                <td colspan="2"> Content 6 </td>
+                <td> Content 7 </td>
+            </tr>
+
+            <tr> 
+                <td colspan="3"> Content 8 </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td> Value 1 </td>
+                <td> Value 2 </td>
+                <td> Value 3 </td>
+            </tr>
+        </tfoot>
+
+    </table>
+</div>    
+
+</body>
+</html>
