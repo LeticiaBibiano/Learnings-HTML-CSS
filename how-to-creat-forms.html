@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Learning form by Leticia Bibiano </title>
+
+    <style>
+        
+        body { 
+            font-family: sans-serif;
+        }
+
+        /*With CSS we can activate the cursor*/ 
+        label {
+            cursor: pointer;
+        }
+
+        table td, table th {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: left;
+        }    
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table thead {
+           background-color: rgb(94, 255, 0); 
+        }
+
+        .Description {
+            background-color: rgb(207, 252, 198);
+        }        
+
+    </style>
+
+</head>
+
+<body>
+    <!-- method="get" is defaut / Target and autocomplete were put only for visualization and learning (It's not common in forms) -->
+   <form action="#" method="get" target="_blank" autocomplete="off">
+
+    <h1> Example of a form </h1>
+    <p> Fill in the form as requested. </p>
+    
+    <p> 
+        <label for="name"> Name: </label> <br>
+        <input type="text" id="name" name="name" placeholder="Ex.: Bill Gates" required>
+    </p>
+
+    <!-- With "type=radio" we make a unique selection -->
+    <p> 
+        Your gender: <br>
+        <label for="female"> Female </label> 
+        <input type="radio" id="female" name="gender" value="female"> 
+
+        <label for="male"> Male </label>
+        <input type="radio" id="male" name="gender" value="male">
+
+        <label for="other"> Other </label>
+        <input type="radio" id="other" name="gender" value="other">
+
+    </p>
+
+    <!-- With "type=checkbox" we can make a lot of markings -->
+    <p> 
+        <label for="dev"> Check here if you're a developer: </label>
+        <input type="checkbox" id="dev" name="dev" value="yes">
+    </p>
+
+    <p>
+        <label for="select"> Select your developer level: </label> 
+        <select id="select" name="select">
+            <option value="junior"> Junior </option>
+            <option value="Mid-Level"> Mid-Level </option>
+            <option value="Senior"> Senior </option>
+
+        </select>
+    </p>
+
+    <p>
+    <label for="textarea"> Tell me about you: </label>
+    <textarea name="about" id="about" rows="10"></textarea>
+    </p>
+
+    <p>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+
+    </p>
+
+   </form> 
+
+       <!-- EXECUTE THE CODE TO SEE THE LIST OF ALL THE HTML INPUTS -->
+
+       <hr>
+
+       <strong> Check below the list with all HTML inputs! </strong>
+   
+       <h2> HTML Form Input Types </h2>
+   
+       <p> In HTML &lt;input type=" "&gt; </pre> is an important element of HTML form. 
+           The "type" attribute of input element can be various types, which defines information field. 
+           Such as &lt;input type="text" name="name"&gt; gives a text box.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th> type= "#"</th>
+                <th> Description </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td> BUTTON </td>
+                <td> Defines a simple push button, which can be programmed to perform a task on an event. </td>
+            </tr>    
+
+            <tr class="Description">
+                <td> CHECKBOX </td>
+                <td> Defines checkboxes which allow select multiple options form.</td>
+            </tr>  
+
+            <tr>
+                <td> FILE </td>
+                <td> Defines to select the file from device storage.</td>
+            </tr>  
+
+            <tr class="Description">
+                <td> IMAGE </td>
+                <td> Defines a graphical submit button. </td>
+            </tr>  
+
+            <tr>
+                <td> PASSWORD  </td>
+                <td> Defines a one-line password input field </td>
+            </tr>
+            
+            <tr class="Description">
+                <td> RADIO   </td>
+                <td> Defines a radio button which allows select one option. </td>
+            </tr>  
+
+            <tr>
+                <td> RESET  </td>
+                <td> Defines a reset button to reset all values in the form.</td>
+            </tr>  
+
+            <tr class="Description">
+                <td> SUBMIT  </td>
+                <td> Defines a submit button to submit the form to server </td>
+            </tr>
+            
+            <tr>
+                <td> TEXT  </td>
+                <td> Defines a one-line text input field </td>
+            </tr>  
+
+        </tbody>
+
+    </table>
+    <br>
+    <strong> HTML5 added new types on &lt;input&gt; element. Following is the list of types of elements of HTML5: </strong>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th> type= "#"</th>
+                <th> Description </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td> COLOR </td>
+                <td> Defines an input field with a specific color. </td>
+            </tr>    
+
+            <tr class="Description">
+                <td> DATE </td>
+                <td> Defines an input field for selection of date. </td>
+            </tr>  
+
+            <tr>
+                <td> DATETIME-LOCAL </td>
+                <td> Defines an input field for entering a date without time zone. </td>
+            </tr>  
+
+            <tr class="Description">
+                <td> EMAIL </td>
+                <td> Defines an input field for entering an email address. </td>
+            </tr>  
+
+            <tr>
+                <td> MONTH  </td>
+                <td> Defines a control with month and year, without time zone. </td>
+            </tr>
+            
+            <tr class="Description">
+                <td> NUMBER   </td>
+                <td> Defines an input field to enter a number. </td>
+            </tr>  
+
+            <tr>
+                <td> SEARCH </td>
+                <td> Defines a single line text field for entering a search string. </td>
+            </tr>  
+
+            <tr class="Description">
+                <td> TEL  </td>
+                <td> Defines an input field for entering the telephone number. </td>
+            </tr>
+            
+            <tr>
+                <td> URL  </td>
+                <td> Defines a field for entering URL. </td>
+            </tr>
+            
+            <tr class="Description">
+                <td> WEEK </td>
+                <td> Defines a field to enter the date with week-year, without time zone. </td>
+            </tr>
+
+            <tr>
+                <td> RANGE  </td>
+                <td> Defines a control for entering a number whose exact value is not important (like a slider control). </td>
+            </tr>
+            
+
+        </tbody>
+
+    </table>
+</body>
+</html>
