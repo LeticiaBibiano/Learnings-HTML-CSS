@@ -1,0 +1,27 @@
+body { 
+    font-family: sans-serif;
+}
+
+/*With CSS we can activate the cursor*/ 
+label {
+    cursor: pointer;
+}
+
+table td, table th {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}    
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table thead {
+   background-color: rgb(94, 255, 0); 
+}
+
+.Description {
+    background-color: rgb(207, 252, 198);
+}        
